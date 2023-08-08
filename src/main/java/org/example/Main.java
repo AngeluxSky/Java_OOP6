@@ -70,10 +70,10 @@ public class Main {
         System.out.println("Введите заказ:");
 
         ConsoleInput consoleInput = new ConsoleInput();
-        String clientName = consoleInput.prompt("Client name: ");
-        String product = consoleInput.prompt("Product: ");
-        int qnt = consoleInput.promptInt("Quantity: ");
-        int price = consoleInput.promptInt("Price: ");
+        String clientName = consoleInput.prompt("Имя клиента: ");
+        String product = consoleInput.prompt("Продукт: ");
+        int qnt = consoleInput.promptInt("Кол-во: ");
+        int price = consoleInput.promptInt("Цена: ");
 
         Order order = new Order(clientName, product, qnt, price);
         OrderWriter orderWriter = new OrderWriter("order.json");
